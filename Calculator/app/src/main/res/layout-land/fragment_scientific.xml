@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scientific_layout"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".ScientificFragment">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="12dp"
+        android:background="#d9d9d9"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRoot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLn"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+
+        android:layout_marginBottom="5dp"
+
+        android:text="@string/naturalLogText"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:backgroundTint="#F4F3F3"
+        app:cornerRadius="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEpowerX"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSin"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+
+        android:layout_marginBottom="5dp"
+
+        android:text="@string/trigSinText"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:backgroundTint="#F4F3F3"
+        app:cornerRadius="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCos"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+
+        android:layout_marginBottom="5dp"
+
+        android:text="@string/trigCosText"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:backgroundTint="#F4F3F3"
+        app:cornerRadius="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLog"
+        app:layout_constraintStart_toEndOf="@+id/buttonSin" />
+
+    <Button
+        android:id="@+id/buttonTan"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/trigTanText"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:backgroundTint="#F4F3F3"
+        app:cornerRadius="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonXPowerY"
+        app:layout_constraintStart_toEndOf="@+id/buttonLog" />
+
+    <Button
+        android:id="@+id/buttonLog"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+
+        android:layout_marginBottom="5dp"
+
+        android:text="@string/LogText"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:backgroundTint="#F4F3F3"
+        app:cornerRadius="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonXSquare"
+        app:layout_constraintStart_toEndOf="@+id/buttonLn" />
+
+    <Button
+        android:id="@+id/buttonTwoPowerX"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+
+        android:layout_marginBottom="5dp"
+
+        android:text="@string/twoPowerXText"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="#F4F3F3"
+        app:cornerRadius="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSin"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonRoot"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+
+        android:layout_marginBottom="5dp"
+
+        android:text="√"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:backgroundTint="#F4F3F3"
+        app:cornerRadius="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCos"
+        app:layout_constraintStart_toEndOf="@+id/buttonTwoPowerX" />
+
+    <Button
+        android:id="@+id/buttonEpowerX"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="5dp"
+
+
+        android:text="@string/ePowerXText"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="#F4F3F3"
+        app:cornerRadius="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAbs"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAbs"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+
+        android:layout_marginBottom="12dp"
+
+        android:text="x!"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="#F4F3F3"
+        app:cornerRadius="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPi"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+
+        android:layout_marginBottom="12dp"
+
+        android:text="@string/piText"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="#F4F3F3"
+        app:cornerRadius="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonAbs" />
+
+    <Button
+        android:id="@+id/buttonEpsilon"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+
+        android:layout_marginBottom="12dp"
+
+        android:text="@string/eText"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="#F4F3F3"
+        app:cornerRadius="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonPi" />
+
+    <Button
+        android:id="@+id/buttonXSquare"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+
+        android:layout_marginBottom="5dp"
+
+        android:text="@string/xSquaredText"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="#F4F3F3"
+        app:cornerRadius="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPi"
+        app:layout_constraintStart_toEndOf="@+id/buttonEpowerX" />
+
+    <Button
+        android:id="@+id/buttonXPowerY"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+
+        android:layout_marginBottom="5dp"
+
+        android:text="@string/xPowerYText"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="#F4F3F3"
+        app:cornerRadius="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEpsilon"
+        app:layout_constraintStart_toEndOf="@+id/buttonXSquare" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
